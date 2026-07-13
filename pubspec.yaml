@@ -1,0 +1,24 @@
+name: review_flow_tester
+description: >
+  Tests the exact iOS + Android rating-prompt logic described in
+  "แนวทางการแสดงและพัฒนา Rating Prompt จากระบบปฏิบัติการ" —
+  sessionCount >= 5, hasReviewed / hasRated persistence, and the
+  documented fallback functions.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  in_app_review: ^2.0.9
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true

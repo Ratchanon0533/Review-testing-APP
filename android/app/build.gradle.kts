@@ -10,7 +10,6 @@ if (keystorePropertiesFile.exists()) {
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
 
@@ -46,8 +45,8 @@ android {
     }
 
     dependencies {
-        implementation("com.google.android.play:review:2.0.2")
-        implementation("com.google.android.play:review-ktx:2.0.2")
+        implementation("com.google.android.play:review:2.0.1")
+        implementation("com.google.android.play:review-ktx:2.0.1")
     }
 
     buildTypes {
